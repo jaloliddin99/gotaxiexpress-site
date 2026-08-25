@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="uz" data-lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoTaxi Express — tez va qulay taksi xizmati</title>
+  <meta name="description" content="GoTaxi Express — O'zbekistonda tez, xavfsiz va qulay narxdagi taksi xizmati. Ilovani yuklab oling va bir necha soniyada taksi chaqiring. Быстрое и удобное такси. Fast and affordable taxi service.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/">
+      <svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#FFC400"/>
+        <g fill="#0E0E10">
+          <rect x="10" y="10" width="9" height="9"/><rect x="28" y="10" width="9" height="9"/><rect x="46" y="10" width="9" height="9"/>
+          <rect x="19" y="19" width="9" height="9"/><rect x="37" y="19" width="9" height="9"/>
+        </g>
+        <text x="32" y="53" font-family="Arial" font-size="25" font-weight="800" text-anchor="middle" fill="#0E0E10">GT</text>
+      </svg>
+      GoTaxi <span class="accent">Express</span>
+    </a>
+    <nav class="site-nav">
+      <a href="#features"><span class="l-uz">Afzalliklar</span><span class="l-ru">Преимущества</span><span class="l-en">Features</span></a>
+      <a href="#how"><span class="l-uz">Qanday ishlaydi</span><span class="l-ru">Как это работает</span><span class="l-en">How it works</span></a>
+      <a href="#drivers"><span class="l-uz">Haydovchilarga</span><span class="l-ru">Водителям</span><span class="l-en">For drivers</span></a>
+      <a href="#contact"><span class="l-uz">Aloqa</span><span class="l-ru">Контакты</span><span class="l-en">Contact</span></a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-lang="uz" class="active">UZ</button>
+      <button type="button" data-lang="ru">RU</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>
+      <span class="l-uz">Taksi chaqirish endi <span class="accent">juda oson</span></span>
+      <span class="l-ru">Вызвать такси — <span class="accent">проще простого</span></span>
+      <span class="l-en">Getting a taxi has <span class="accent">never been easier</span></span>
+    </h1>
+    <p class="lead">
+      <span class="l-uz">GoTaxi Express — shahar bo'ylab tez, xavfsiz va qulay narxdagi taksi xizmati. Ilovani yuklab oling va bir necha soniyada mashina chaqiring.</span>
+      <span class="l-ru">GoTaxi Express — быстрое, безопасное и доступное такси по всему городу. Скачайте приложение и закажите машину за считанные секунды.</span>
+      <span class="l-en">GoTaxi Express is a fast, safe and affordable taxi service. Download the app and get a ride in seconds.</span>
+    </p>
+    <div class="store-badges">
+      <!-- TODO: replace href="#" with the real store links when the app is published -->
+      <a class="badge" href="#" rel="noopener">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 3.5v17c0 .4.4.7.8.5l9.7-8.5c.3-.2.3-.7 0-.9L4.8 3c-.4-.2-.8.1-.8.5z" fill="#FFC400"/>
+          <path d="M14.5 12.5l3.2 2.8 2.6-1.5c.5-.3.5-1 0-1.3l-2.6-1.5-3.2 1.5z" fill="#fff" opacity=".8"/>
+        </svg>
+        <span class="badge-text">
+          <span class="badge-small">Google Play</span>
+          <span class="badge-big">
+            <span class="l-uz">Yuklab olish <span class="soon">TEZ KUNDA</span></span>
+            <span class="l-ru">Скачать <span class="soon">СКОРО</span></span>
+            <span class="l-en">Download <span class="soon">SOON</span></span>
+          </span>
+        </span>
+      </a>
+      <a class="badge" href="#" rel="noopener">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
+          <path d="M16.4 12.9c0-2.1 1.7-3.1 1.8-3.2-1-1.4-2.5-1.6-3-1.6-1.3-.1-2.5.8-3.2.8-.7 0-1.7-.8-2.8-.7-1.4 0-2.7.8-3.5 2.1-1.5 2.6-.4 6.4 1.1 8.5.7 1 1.5 2.2 2.6 2.1 1.1 0 1.5-.7 2.8-.7 1.3 0 1.6.7 2.8.7 1.2 0 1.9-1 2.6-2 .8-1.2 1.2-2.4 1.2-2.4s-2.3-.9-2.4-3.6zM14.3 6.4c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.6.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z"/>
+        </svg>
+        <span class="badge-text">
+          <span class="badge-small">App Store</span>
+          <span class="badge-big">
+            <span class="l-uz">Yuklab olish <span class="soon">TEZ KUNDA</span></span>
+            <span class="l-ru">Скачать <span class="soon">СКОРО</span></span>
+            <span class="l-en">Download <span class="soon">SOON</span></span>
+          </span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>
+        <span class="l-uz">Nega aynan GoTaxi Express?</span>
+        <span class="l-ru">Почему именно GoTaxi Express?</span>
+        <span class="l-en">Why GoTaxi Express?</span>
+      </h2>
+      <p>
+        <span class="l-uz">Har bir safaringiz tez, xavfsiz va hamyonbop bo'lishi uchun ishlaymiz.</span>
+        <span class="l-ru">Мы работаем, чтобы каждая ваша поездка была быстрой, безопасной и доступной.</span>
+        <span class="l-en">We work to make every ride fast, safe and affordable.</span>
+      </p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2L4.5 13h6L10 22l8.5-11h-6L13 2z" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <h3><span class="l-uz">Tez yetib kelish</span><span class="l-ru">Быстрая подача</span><span class="l-en">Fast pickup</span></h3>
+        <p>
+          <span class="l-uz">Yaqin-atrofdagi haydovchi bir necha daqiqada yetib keladi.</span>
+          <span class="l-ru">Ближайший водитель приедет за считанные минуты.</span>
+          <span class="l-en">The nearest driver arrives within minutes.</span>
+        </p>
+      </div>
+      <div class="feature">
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        </div>
+        <h3><span class="l-uz">Halol narxlar</span><span class="l-ru">Честные цены</span><span class="l-en">Fair prices</span></h3>
+        <p>
+          <span class="l-uz">Safar narxini buyurtmadan oldin ko'rasiz — yashirin to'lovlar yo'q.</span>
+          <span class="l-ru">Стоимость поездки видна до заказа — никаких скрытых платежей.</span>
+          <span class="l-en">See the fare before you order — no hidden fees.</span>
+        </p>
+      </div>
+      <div class="feature">
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3><span class="l-uz">Xavfsiz safarlar</span><span class="l-ru">Безопасные поездки</span><span class="l-en">Safe rides</span></h3>
+        <p>
+          <span class="l-uz">Barcha haydovchilar tekshiruvdan o'tgan, safar marshruti kuzatib boriladi.</span>
+          <span class="l-ru">Все водители проходят проверку, маршрут поездки отслеживается.</span>
+          <span class="l-en">All drivers are verified and every trip is tracked.</span>
+        </p>
+      </div>
+      <div class="feature">
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2z"/></svg>
+        </div>
+        <h3><span class="l-uz">24/7 qo'llab-quvvatlash</span><span class="l-ru">Поддержка 24/7</span><span class="l-en">24/7 support</span></h3>
+        <p>
+          <span class="l-uz">Savol tug'ilsa, jamoamiz kechayu kunduz yordam beradi.</span>
+          <span class="l-ru">Наша команда поможет вам в любое время суток.</span>
+          <span class="l-en">Our team is here to help around the clock.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="container">
+    <div class="section-head">
+      <h2>
+        <span class="l-uz">Qanday ishlaydi</span>
+        <span class="l-ru">Как это работает</span>
+        <span class="l-en">How it works</span>
+      </h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3><span class="l-uz">Manzilni kiriting</span><span class="l-ru">Укажите адрес</span><span class="l-en">Set your destination</span></h3>
+        <p>
+          <span class="l-uz">Ilovada qayerga borishingizni tanlang va narxni ko'ring.</span>
+          <span class="l-ru">Выберите в приложении, куда ехать, и посмотрите цену.</span>
+          <span class="l-en">Choose where you're going in the app and see the fare.</span>
+        </p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3><span class="l-uz">Haydovchi yetib keladi</span><span class="l-ru">Водитель приезжает</span><span class="l-en">Driver arrives</span></h3>
+        <p>
+          <span class="l-uz">Eng yaqin haydovchi buyurtmani qabul qilib, oldingizga keladi.</span>
+          <span class="l-ru">Ближайший водитель принимает заказ и подъезжает к вам.</span>
+          <span class="l-en">The nearest driver accepts your order and picks you up.</span>
+        </p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3><span class="l-uz">Safar qiling va to'lang</span><span class="l-ru">Поездка и оплата</span><span class="l-en">Ride and pay</span></h3>
+        <p>
+          <span class="l-uz">Manzilga yetib boring, naqd yoki karta orqali to'lang.</span>
+          <span class="l-ru">Доезжайте до места и платите наличными или картой.</span>
+          <span class="l-en">Get to your destination and pay in cash or by card.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="drivers" class="alt">
+  <div class="container">
+    <div class="drivers-cta">
+      <div class="cta-text">
+        <h2>
+          <span class="l-uz">Haydovchimisiz? <span class="accent">Biz bilan daromad qiling</span></span>
+          <span class="l-ru">Вы водитель? <span class="accent">Зарабатывайте с нами</span></span>
+          <span class="l-en">Are you a driver? <span class="accent">Earn with us</span></span>
+        </h2>
+        <p>
+          <span class="l-uz">GoTaxi Express haydovchilar jamoasiga qo'shiling — qulay grafik, adolatli komissiya va doimiy buyurtmalar.</span>
+          <span class="l-ru">Присоединяйтесь к команде водителей GoTaxi Express — удобный график, честная комиссия и постоянные заказы.</span>
+          <span class="l-en">Join the GoTaxi Express driver team — flexible schedule, fair commission and a steady stream of orders.</span>
+        </p>
+      </div>
+      <!-- PLACEHOLDER: replace with the real driver-signup phone/link -->
+      <a class="btn" href="tel:+998000000000">
+        <span class="l-uz">Bog'lanish</span>
+        <span class="l-ru">Связаться</span>
+        <span class="l-en">Contact us</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head">
+      <h2>
+        <span class="l-uz">Biz bilan bog'laning</span>
+        <span class="l-ru">Свяжитесь с нами</span>
+        <span class="l-en">Get in touch</span>
+      </h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3><span class="l-uz">Telefon</span><span class="l-ru">Телефон</span><span class="l-en">Phone</span></h3>
+        <!-- PLACEHOLDER phone -->
+        <a href="tel:+998000000000">+998 (00) 000-00-00</a>
+      </div>
+      <div class="contact-card">
+        <h3>Email</h3>
+        <!-- PLACEHOLDER email -->
+        <a href="mailto:info@gotaxiexpress.uz">info@gotaxiexpress.uz</a>
+      </div>
+      <div class="contact-card">
+        <h3><span class="l-uz">Manzil</span><span class="l-ru">Адрес</span><span class="l-en">Address</span></h3>
+        <!-- PLACEHOLDER address -->
+        <span class="value">
+          <span class="l-uz">[Kompaniya manzili]</span>
+          <span class="l-ru">[Адрес компании]</span>
+          <span class="l-en">[Company address]</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>GoTaxi Express</h4>
+        <p>
+          <span class="l-uz">Tez, xavfsiz va qulay taksi xizmati.</span>
+          <span class="l-ru">Быстрое, безопасное и удобное такси.</span>
+          <span class="l-en">Fast, safe and convenient taxi service.</span>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4><span class="l-uz">Hujjatlar</span><span class="l-ru">Документы</span><span class="l-en">Legal</span></h4>
+        <ul>
+          <li><a href="/privacy"><span class="l-uz">Maxfiylik siyosati</span><span class="l-ru">Политика конфиденциальности</span><span class="l-en">Privacy Policy</span></a></li>
+          <li><a href="/terms"><span class="l-uz">Foydalanish shartlari</span><span class="l-ru">Условия использования</span><span class="l-en">Terms of Service</span></a></li>
+          <li><a href="/support"><span class="l-uz">Yordam</span><span class="l-ru">Поддержка</span><span class="l-en">Support</span></a></li>
+          <li><a href="/delete-account"><span class="l-uz">Hisobni o'chirish</span><span class="l-ru">Удаление аккаунта</span><span class="l-en">Delete account</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4><span class="l-uz">Rekvizitlar</span><span class="l-ru">Реквизиты</span><span class="l-en">Company</span></h4>
+        <!-- PLACEHOLDER legal details -->
+        <p>
+          [«GOTAXI EXPRESS» MChJ / LLC]<br>
+          <span class="l-uz">STIR (INN): [000 000 000]</span>
+          <span class="l-ru">ИНН: [000 000 000]</span>
+          <span class="l-en">Tax ID (INN): [000 000 000]</span><br>
+          <span class="l-uz">[Ro'yxatdan o'tgan manzil]</span>
+          <span class="l-ru">[Юридический адрес]</span>
+          <span class="l-en">[Registered address]</span>
+        </p>
+      </div>
+    </div>
+    <div class="legal-line">
+      <span>© 2026 GoTaxi Express.
+        <span class="l-uz">Barcha huquqlar himoyalangan.</span>
+        <span class="l-ru">Все права защищены.</span>
+        <span class="l-en">All rights reserved.</span>
+      </span>
+      <span>gotaxiexpress.uz</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

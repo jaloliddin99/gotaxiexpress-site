@@ -1,0 +1,47 @@
+# GoTaxi Express — landing site (gotaxiexpress.uz)
+
+Static trilingual (uz/ru/en) landing site for the GoTaxi Express taxi service.
+No build step — plain HTML/CSS/JS, served by Apache on cPanel shared hosting.
+
+## Pages
+- `index.html` — landing page (hero, features, how it works, drivers CTA, contact)
+- `privacy.html` — privacy policy (required by Play Store / App Store)
+- `terms.html` — terms of service
+- `support.html` — support/contact + FAQ (App Store requires a support URL)
+- `delete-account.html` — account deletion instructions (Play Data Safety URL)
+- `styles.css`, `app.js` (language switcher), `favicon.svg`
+- `robots.txt`, `sitemap.xml`, `.htaccess` (HTTPS redirect + pretty URLs)
+
+Language switching: buttons set `data-lang` on `<html>`; CSS shows only the
+active language's `.l-uz` / `.l-ru` / `.l-en` blocks. Choice persists in
+localStorage; `?lang=ru` etc. also works. Default is Uzbek.
+
+## PLACEHOLDERS — replace before/after launch
+Search the repo for `PLACEHOLDER` and `[` brackets. To fill in:
+1. **Company legal name** — `[«GOTAXI EXPRESS» MChJ / LLC]` (index footer, privacy, terms)
+2. **INN / STIR** — `[000 000 000]` (index footer, privacy)
+3. **Registered address** — `[Kompaniya manzili]` etc. (index contact + footer, privacy)
+4. **Phone** — `+998 (00) 000-00-00` and `tel:+998000000000` (index, support, privacy, terms)
+5. **Email** — currently `info@gotaxiexpress.uz`; confirm this mailbox exists
+6. **Telegram** — `@gotaxiexpress` link on support page
+7. **Store links** — `href="#"` on the two hero badges in `index.html`; also remove
+   the "SOON / TEZ KUNDA / СКОРО" pills when the app is live
+8. **Legal dates** — "Last updated" dates on privacy/terms if the text changes
+
+## Deploy (cPanel, testone.uz shared server)
+Document root: `/home/tesoneuz/gotaxiexpress.uz`
+
+First time, in the cPanel Terminal:
+
+    cd ~/gotaxiexpress.uz
+    git init
+    git remote add origin https://github.com/jaloliddin99/gotaxiexpress-site.git
+    git fetch origin
+    git reset --hard origin/main
+
+Updates afterwards:
+
+    cd ~/gotaxiexpress.uz && git pull
+
+DNS: A records for `@` and `www` → 37.153.159.11 (ahost panel).
+SSL: cPanel AutoSSL issues the certificate automatically after DNS propagates.
