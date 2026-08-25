@@ -23,8 +23,7 @@ localStorage; `?lang=ru` etc. also works. Default is Uzbek.
 - Registered: 02 December 2021
 
 ## PLACEHOLDERS still to replace
-Search the repo for `PLACEHOLDER` and `[` brackets. To fill in (INN intentionally omitted):
-4. **Phone** — `+998 (00) 000-00-00` and `tel:+998000000000` (index, support, privacy, terms) — use the director's phone
+(INN intentionally omitted; phone filled: +998 (99) 220-11-77.)
 5. **Email** — currently `info@gotaxiexpress.uz`; confirm this mailbox exists
 6. **Telegram** — `@gotaxiexpress` link on support page
 7. **Store links** — `href="#"` on the two hero badges in `index.html`; also remove
