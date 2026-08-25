@@ -16,11 +16,15 @@ Language switching: buttons set `data-lang` on `<html>`; CSS shows only the
 active language's `.l-uz` / `.l-ru` / `.l-en` blocks. Choice persists in
 localStorage; `?lang=ru` etc. also works. Default is Uzbek.
 
-## PLACEHOLDERS — replace before/after launch
+## Company details (filled 2026-08-25)
+- Legal name: «GO TAXI EXPRESS» MChJ / ООО «GO TAXI EXPRESS» / "GO TAXI EXPRESS" LLC
+- Address: 28 Moturidiy Street, Apartment 17, Fergana 150100, Uzbekistan
+  (Farg'ona sh., Moturidiy ko'chasi, 28-uy, 17-xonadon, 150100)
+- Registered: 02 December 2021
+
+## PLACEHOLDERS still to replace
 Search the repo for `PLACEHOLDER` and `[` brackets. To fill in:
-1. **Company legal name** — `[«GOTAXI EXPRESS» MChJ / LLC]` (index footer, privacy, terms)
 2. **INN / STIR** — `[000 000 000]` (index footer, privacy)
-3. **Registered address** — `[Kompaniya manzili]` etc. (index contact + footer, privacy)
 4. **Phone** — `+998 (00) 000-00-00` and `tel:+998000000000` (index, support, privacy, terms)
 5. **Email** — currently `info@gotaxiexpress.uz`; confirm this mailbox exists
 6. **Telegram** — `@gotaxiexpress` link on support page
